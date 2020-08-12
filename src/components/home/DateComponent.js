@@ -13,9 +13,7 @@ export default class DateComponent extends React.Component {
   render() {
     return ( 
       <View style={styles.dateContainer}>
-        <Text style={styles.dateText}>{moment().date()} de 
-        {moment().format('MMMM')}, 
-        {moment().format('dddd')} </Text>
+        <Text style={styles.dateText}>{moment().date()} de {moment().format('MMMM')}, {moment().format('dddd')} </Text>
       </View>
     );
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 
@@ -8,6 +7,7 @@ import {
   white,
 } from './src/components/helper/Colors';
 
+//Telas da aplicacao
 import HomeScreen from './src/components/screen/HomeScreen';
 import AnuncioScreen from './src/components/screen/AnuncioScreen';
 import PublicacoesScreen from './src/components/screen/PublicacoesScreen';
