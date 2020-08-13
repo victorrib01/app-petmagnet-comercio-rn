@@ -23,9 +23,9 @@ export default function App() {
         activeColor={white}
         barStyle={{backgroundColor: footerColor}}>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Anuncio" component={AnuncioScreen} />
-        <Tab.Screen name="Publicacoes" component={PublicacoesScreen} />
-        <Tab.Screen name="Preferencias" component={PreferenciasScreen} />
+        <Tab.Screen name="Anúncios" component={AnuncioScreen} />
+        <Tab.Screen name="Publicações" component={PublicacoesScreen} />
+        <Tab.Screen name="Preferências" component={PreferenciasScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

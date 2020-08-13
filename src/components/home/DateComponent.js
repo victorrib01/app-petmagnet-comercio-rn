@@ -14,22 +14,26 @@ export default class DateComponent extends React.Component {
     return ( 
       <View style={styles.dateContainer}>
         <Text style={styles.dateText}>{moment().date()} de {moment().format('MMMM')}, {moment().format('dddd')} </Text>
+        <Text style={styles.welcomeMessage}>Boa tarde, Sheila</Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
+  dateContainer: {
+    marginTop: 15
   },
   dateText: {
-    fontWeight: 'bold',
-    color: '#594A46',
-    fontSize: 26,
+    fontFamily: 'Open Sans',
+    color: '#0A0A0A',
+    fontSize: 16,
     marginTop: 10,
   },
+  welcomeMessage:{
+    fontFamily: 'Open Sans',
+    color: '#0A0A0A',
+    fontSize: 26,
+    marginLeft: -5,  
+  }
 });
