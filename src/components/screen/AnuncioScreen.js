@@ -1,20 +1,79 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {View, StyleSheet, Text, TextInput, Button} from 'react-native';
 
 import Header from './../home/HomeHeader';
 
-const AnuncioScreen = ({navigation}) => {
+const AnuncioScreen = () => {
   return (
-    
     <View>
-    <Header/>
-      <Text>AnuncioScreen</Text>
-      <Button
-        title="Go back"
-        onPress={() => navigation.goBack()}
-      />
+      <Header />
+      <View style={styles.container}>
+        <View style={styles.textBox}>
+          <Text style={styles.textQuestion}>
+            O que você gostaria de anunciar?
+          </Text>
+          <Text style={styles.textDesc}>
+            Digite um título para chamar a atenção dos clientes, exemplo
+            "Aproveite esses Ótimos Preços"
+          </Text>
+        </View>
+        <View style={styles.inputBox}>
+          <Text style={styles.titulo}>Título</Text>
+          <TextInput
+            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+          />
+          <Text style={styles.paginate}>1/4</Text>
+        </View>
+        <View style={styles.confirmButton}>
+          <Button title="Confirmar" onPress/>
+        </View>
+      </View>
     </View>
   );
 }
-
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  textBox: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+    padding: 20,
+    marginTop: 20,
+  },
+  textQuestion: {
+    fontSize: 20,
+  },
+  textDesc: {
+    fontSize: 14,
+    marginTop: 20,
+    textAlign: 'center',
+  },
+  inputBox: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+    padding: 20,
+    marginTop: 50,
+    marginBottom: 70,
+    
+  },
+  titulo: {
+    fontSize: 20,
+  },
+  pagination: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+    fontSize: 20,
+  },
+  confirmButton:{
+    borderRadius: 50
+  }
+});
 export default AnuncioScreen;
