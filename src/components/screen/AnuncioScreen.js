@@ -25,7 +25,7 @@ const AnuncioScreen = () => {
           <Text style={styles.paginate}>1/4</Text>
         </View>
         <View style={styles.confirmButton}>
-          <Button title="Confirmar" onPress/>
+          <Button title="Confirmar" onPress />
         </View>
       </View>
     </View>
@@ -60,7 +60,6 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 50,
     marginBottom: 70,
-    
   },
   titulo: {
     fontSize: 20,
@@ -72,7 +71,7 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     fontSize: 20,
   },
-  confirmButton:{
+  confirmButton: {
     borderRadius: 50
   }
 });
