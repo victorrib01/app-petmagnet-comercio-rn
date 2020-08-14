@@ -13,24 +13,26 @@ const AnuncioScreen = () => {
             O que você gostaria de anunciar?
           </Text>
           <Text style={styles.textDesc}>
-            Digite um título para chamar a atenção dos clientes, exemplo
+            Digite um título para chamar a atenção dos clientes, exemplo:
             "Aproveite esses Ótimos Preços"
           </Text>
         </View>
         <View style={styles.inputBox}>
           <Text style={styles.titulo}>Título</Text>
           <TextInput
-            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+            style={{height: 40, borderColor: 'gray', borderWidth: 1, width:300}}
+            maxLength= {45}
+            defaultValue='Um petisco para seu Dog!'
           />
           <Text style={styles.paginate}>1/4</Text>
         </View>
         <View style={styles.confirmButton}>
-          <Button title="Confirmar" onPress />
+          <Button title="Confirmar" />
         </View>
       </View>
     </View>
   );
-}
+};
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
@@ -58,7 +60,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignContent: 'center',
     padding: 20,
-    marginTop: 50,
+    marginTop: 20,
     marginBottom: 70,
   },
   titulo: {
@@ -72,7 +74,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   confirmButton: {
-    borderRadius: 50
-  }
+    borderRadius: 50,
+  },
 });
 export default AnuncioScreen;
