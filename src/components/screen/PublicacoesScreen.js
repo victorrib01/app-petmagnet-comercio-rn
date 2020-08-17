@@ -5,7 +5,7 @@ import Header from './../home/HomeHeader';
 
 const PublicacoesScreen = ({navigation}) => {
   return (
-    <View>
+    <View style={styles.view}>
       <Header />
       <ScrollView>
         <View style={styles.publicacaoBox}>
@@ -177,6 +177,9 @@ const PublicacoesScreen = ({navigation}) => {
   );
 }
 const styles = StyleSheet.create({
+  view:{
+    marginBottom: 60
+  },
   publicacaoView: {
     flexDirection: 'column',
     justifyContent: 'space-around',
