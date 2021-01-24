@@ -24,21 +24,21 @@ const PublicacoesScreen = ({navigation}) => {
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 38,49</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 42,50</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 40,99</Text>
             </View>
@@ -65,21 +65,21 @@ const PublicacoesScreen = ({navigation}) => {
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 38,49</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 42,50</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 40,99</Text>
             </View>
@@ -106,21 +106,21 @@ const PublicacoesScreen = ({navigation}) => {
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 38,49</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 42,50</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 40,99</Text>
             </View>
@@ -147,21 +147,21 @@ const PublicacoesScreen = ({navigation}) => {
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 38,49</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 42,50</Text>
             </View>
             <View style={styles.item}>
               <Image
                 style={styles.itemFoto}
-                source={require('../imgs/Ração_Seca.jpg')}
+                source={require('../imgs/imagem_exemplo.jpg')}
               />
               <Text>R$ 40,99</Text>
             </View>
@@ -226,10 +226,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     backgroundColor: '#FFFFFE',
     height: 140,
-    marginBottom: 10,
-
+    marginBottom: 10
   },
-  text:{
+  text: {
     zIndex: 5,
   },
   item: {
